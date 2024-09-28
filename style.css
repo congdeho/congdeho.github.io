@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info {
+  padding-right: 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 20px;
+}
+.contact-info img {
+  margin-right: 10px; /* Khoảng cách giữa ảnh và văn bản */
+}
+.sdt {
+  display: flex;
+}
+.email {
+  display: flex;
+}
+.location {
+  display: flex;
+}
+.profile-img {
+  width: 150px;
+  height: 174px;
+  margin-left: 40px;
+}
+
+.header-info h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.header-info h3 {
+  font-size: 20px;
+  color: #777;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.left-column, .right-column {
+  width: 48%;
+  margin-right: 2%;
+}
+
+.right-column {
+  margin-right: 0;
+}
+
+.section {
+  /* margin-bottom: 20px; */
+}
+
+
+h2 {
+  font-size: 24px;
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+h3 {
+  position: relative; /* Đặt vị trí tương đối để sử dụng với ::before */
+  padding-left: 20px; /* Tạo khoảng cách giữa tiêu đề và dấu chấm */
+}
+
+h3::before {
+  content: ""; /* Không cần text, chỉ tạo dấu chấm */
+  position: absolute;
+  left: 0; /* Đặt dấu chấm ở bên trái trước nội dung */
+  top: 50%;
+  transform: translateY(-50%); /* Canh giữa theo chiều dọc */
+  width: 8px; /* Kích thước dấu chấm */
+  height: 8px;
+  background-color: black; /* Màu của dấu chấm */
+  border-radius: 50%; /* Tạo hình tròn cho dấu chấm */
+}
+h3 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
